@@ -27,8 +27,8 @@
                 </larecipe-button>
             @endif
 
-            <larecipe-button tag="a" href="https://github.com/saleem-hadad/larecipe" target="__blank" type="black" class="mx-2 px-4">
-                <i class="fab fa-github"></i>
+            <larecipe-button tag="a" href="https://facebook.com/prastiawanrio" target="__blank" type="primary" class="mx-2 px-4">
+                <i class="fab fa-facebook"></i>
             </larecipe-button>
 
             {{-- versions dropdown --}}
