@@ -13,9 +13,15 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $admin = User::create([
+            'username' => 'admin',
             'name' => 'Administrator',
-            'email' => 'basecamp@testing.id',
-            'password' => bcrypt('12345678')
+            'email' => 'admin@basecamp.app',
+            'password' => bcrypt('12345678'),
+            'telp' => '08990125448',
+            'date_of_birth' => '2001-05-19',
+            'date_of_birth' => '2001-05-19',
+            'gender' => 'L',
+            'address' => 'Jl. Gondang Timur Dalam I No. 02',
         ]);
 
         $admin->assignRole('admin');
