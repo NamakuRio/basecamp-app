@@ -27,7 +27,7 @@ class RoleTableSeeder extends Seeder
         $member = Role::create([
             'name' => 'member',
             'guard_name' => 'Member',
-            'User_default' => 1
+            'user_default' => 1
         ]);
     }
 }
