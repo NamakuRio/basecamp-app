@@ -17,6 +17,7 @@ class CreateRolesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('guard_name');
+            $table->integer('user_default')->nullable()->default(0);
             $table->timestamps();
         });
     }
