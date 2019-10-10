@@ -11,13 +11,13 @@ class SettingComposer
     {
         $settings = Setting::get();
         $view->with([
-            'app.name' => $settings->where('name', 'app.name')->first()->value,
-            'app.description' => $settings->where('name', 'app.description')->first()->value,
-            'app.author' => $settings->where('name', 'app.author')->first()->value,
-            'app.version' => $settings->where('name', 'app.version')->first()->value,
-            'app.logo' => $settings->where('name', 'app.logo')->first()->value,
-            'meta.author' => $settings->where('name', 'meta.author')->first()->value,
-            'meta.description' => $settings->where('name', 'meta.description')->first()->value
+            'app_name' => $settings->where('name', 'app.name')->first()->value,
+            'app_description' => $settings->where('name', 'app.description')->first()->value,
+            'app_author' => $settings->where('name', 'app.author')->first()->value,
+            'app_version' => $settings->where('name', 'app.version')->first()->value,
+            'app_logo' => $settings->where('name', 'app.logo')->first()->value,
+            'meta_author' => $settings->where('name', 'meta.author')->first()->value,
+            'meta_description' => $settings->where('name', 'meta.description')->first()->value
         ]);
     }
 }
